@@ -76,7 +76,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head>
           <meta
             name="google-site-verification"
-            content="Ya57KGeBVLGqdTt4-RaSwAiJWPxNPGGN6wRohopggdI"
+            content="UuKbTMThUHFDda_OtPB6_rhtXH3-Vc6yUIMNrJYU8JM"
           />
       </head>
       <body>
@@ -115,7 +115,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               strategy="afterInteractive"
               src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
           />
-          
+
           <Script
             id="google-analytics"
             strategy="afterInteractive"
