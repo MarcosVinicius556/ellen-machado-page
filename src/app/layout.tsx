@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "Ellen Santos Machado - Psicóloga",
     images: [
       {
-        url: "https://ellen-santos-machado.com.br/images/logo/logo.png",
+        url: "https://ellen-santos-machado.com.br/images/logo.png",
         width: 1200,
         height: 630,
         alt: "Psicóloga Ellen Santos Machado - Atendimento humanizado e acolhedor",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Psicóloga Ellen Santos Machado | Atendimento Humanizado para Ansiedade e Autoconhecimento",
     description: "Atendimento psicológico online e presencial com foco em bem-estar emocional, ansiedade, depressão e autoconhecimento.",
-    images: ["https://ellen-santos-machado.com.br/images/logo/logo.png"],
+    images: ["https://ellen-santos-machado.com.br/images/logo.png"],
   },
   alternates: {
     canonical: "https://ellen-santos-machado.com.br",
@@ -89,7 +89,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 "@type": "Person",
                 name: "Ellen Santos Machado",
                 url: "https://ellen-santos-machado.com.br",
-                image: "https://ellen-santos-machado.com.br/images/logo/logo.png",
+                image: "https://ellen-santos-machado.com.br/images/logo.png",
                 sameAs: [
                   "https://www.facebook.com/ellenmachadopsicologa",
                   "https://www.instagram.com/ellenmachado_psi",
