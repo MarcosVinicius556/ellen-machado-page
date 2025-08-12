@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://ellen-santos-machado.com.br",
   },
-  category: "business",
+  category: "business"
 };
 
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600"] });
@@ -72,60 +72,66 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
   let measurementId = process.env.GA_MEASUREMENT_ID;
   return (
-    <>
-      <Script
-        id="ld-json"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Person",
-            name: "Ellen Santos Machado",
-            url: "https://ellen-santos-machado.com.br",
-            image: "https://ellen-santos-machado.com.br/images/logo/logo.png",
-            sameAs: [
-              "https://www.facebook.com/ellenmachadopsicologa",
-              "https://www.instagram.com/ellenmachado_psi",
-              "https://www.linkedin.com/in/ellen-santos-machado",
-            ],
-            jobTitle: "Psicóloga",
-            telephone: "+55-49-98840-1516",
-            email: "ellensmpsi@gmail.com",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "R. Lídio Réis, 114 - Centro",
-              addressLocality: "Lages",
-              addressRegion: "SC",
-              postalCode: "88502-150",
-              addressCountry: "BR",
-            },
-            description:
-              "Psicóloga especializada em terapia cognitivo-comportamental, oferecendo atendimento humanizado online e presencial.",
-          }),
-        }}
-      />
-      <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
-      />
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-      >
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${measurementId}');
-        `}
-      </Script>
-      <html lang="pt-BR" className={inter.className}>
-        <body>
+    <html lang="pt-BR" className={inter.className}>
+      <head>
+          <meta
+            name="google-site-verification"
+            content="Ya57KGeBVLGqdTt4-RaSwAiJWPxNPGGN6wRohopggdI"
+          />
+      </head>
+      <body>
+          <Script
+            id="ld-json"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Person",
+                name: "Ellen Santos Machado",
+                url: "https://ellen-santos-machado.com.br",
+                image: "https://ellen-santos-machado.com.br/images/logo/logo.png",
+                sameAs: [
+                  "https://www.facebook.com/ellenmachadopsicologa",
+                  "https://www.instagram.com/ellenmachado_psi",
+                  "https://www.linkedin.com/in/ellen-santos-machado",
+                ],
+                jobTitle: "Psicóloga",
+                telephone: "+55-49-98840-1516",
+                email: "ellensmpsi@gmail.com",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "R. Lídio Réis, 114 - Centro",
+                  addressLocality: "Lages",
+                  addressRegion: "SC",
+                  postalCode: "88502-150",
+                  addressCountry: "BR",
+                },
+                description:
+                  "Psicóloga especializada em terapia cognitivo-comportamental, oferecendo atendimento humanizado online e presencial.",
+              }),
+            }}
+          />
+          <Script
+              strategy="afterInteractive"
+              src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
+          />
+          
+          <Script
+            id="google-analytics"
+            strategy="afterInteractive"
+          >
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${measurementId}');
+            `}
+          </Script>
+        
           <Header />
           {children}
           <Footer />
         </body>
       </html>
-    </>
   );
 }
