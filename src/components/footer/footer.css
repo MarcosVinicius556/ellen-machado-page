@@ -1,0 +1,82 @@
+.footer {
+    background: var(--primary);
+    color: var(--lightest);
+    padding: 60px 20px 40px;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: var(--light-text);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 6px;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: var(--dark-text);
+}
+
+.footer h4 {
+    color: var(--dark-text);
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.footer-col {
+    flex: 1 1 200px;
+}
+
+.footer-col p {
+    margin: 4px 0;
+    color: var(--light-text);
+}
+
+.store-buttons {
+    margin-top: 16px;
+}
+
+.store-buttons img {
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid var(--light-text);
+    margin: 30px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--light-text);
+}
+
+.footer-links li {
+    margin-bottom: 6px;
+}
+
+.footer-copy {
+    flex: 1 1 100%;
+    margin-top: 20px;
+    color: var(--light-text);
+    font-size: 0.75rem;
+}
+

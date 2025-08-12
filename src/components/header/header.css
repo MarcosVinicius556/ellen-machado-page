@@ -1,0 +1,170 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--nav-background);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  padding: 15px 0;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  padding: 1em;
+  text-align: center;
+  color: var(--light-text);
+  flex-shrink: 0;
+}
+
+.initials {
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: -4px;
+  line-height: 1;
+}
+
+.initials span {
+  display: inline-block;
+  position: relative;
+}
+
+.initials .e {
+  top: -10px;
+}
+
+.name {
+  margin-top: -5px;
+  font-size: 14px;
+  letter-spacing: 5px;
+}
+
+.profession,
+.register {
+  margin-top: 5px;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--light-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn.outline {
+  border: 1px solid var(--secondary);
+  background: var(--secondary);
+  color: var(--lightest-text);
+}
+
+.btn.outline:hover {
+  background: var(--primary);
+}
+
+.btn.solid {
+  background: var(--secondary);
+  color: var(--lightest-text);
+  border: none;
+}
+
+.btn.solid:hover {
+  background: var(--primary);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--light-text);
+  cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+
+  body {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links,
+  .nav-actions {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background: var(--nav-background);
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .nav-links.active,
+  .nav-actions.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .nav-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  body {
+    padding-top: 200px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  body {
+    padding-top: 200px;
+  }
+}
+
