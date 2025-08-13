@@ -76,7 +76,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head>
           <meta
             name="google-site-verification"
-            content="UuKbTMThUHFDda_OtPB6_rhtXH3-Vc6yUIMNrJYU8JM"
+            content="xc8iyy7wr62wsB2oXh7fMydxG2c5Ax3oK4CZdSILBSE"
           />
       </head>
       <body>
