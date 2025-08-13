@@ -29,7 +29,7 @@ export default function Header() {
                 <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
                     <Link href="#hero" onClick={() => setMenuOpen(false)}>Início</Link>
                     <Link href="#about" onClick={() => setMenuOpen(false)}>Sobre</Link>
-                    <Link href="#testimonials" onClick={() => setMenuOpen(false)}>depoimentos</Link>
+                    <Link href="#testimonials" onClick={() => setMenuOpen(false)}>Depoimentos</Link>
                     <Link href="#questions" onClick={() => setMenuOpen(false)}>Dúvidas Frequentes</Link>
                     <Link href="#articles" onClick={() => setMenuOpen(false)}>Artigos</Link>
                 </nav>
