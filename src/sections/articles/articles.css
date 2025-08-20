@@ -10,7 +10,7 @@
 
 .section-artigos .container {
     flex: 1;
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 1em;
     border-radius: 20px 20px 20px 20px ;
