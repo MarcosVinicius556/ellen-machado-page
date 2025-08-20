@@ -45,15 +45,22 @@
 }
 
 .feature-card {
-    cursor: pointer;
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    background: var(--badge-secondary);
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  gap: 15px;
+  background: var(--badge-secondary);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.feature-card div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .feature-card:hover {
@@ -62,6 +69,20 @@
 
 .feature-card.active {
     background: var(--badge-primary);
+}
+
+.feature-card.active div {
+  align-items: start;
+  flex-direction: column;
+}
+
+.feature-card svg {
+  margin-top: 5px;
+}
+
+.feature-card.active svg {
+  display: none;
+  color: var(--light-text);;
 }
 
 .feature-card .icon {

@@ -3,9 +3,10 @@
 import faqData from '@/data/faqData';
 import './questions.css';
 import { useState } from 'react';
+import { RiArrowDropDownLine } from 'react-icons/ri';
 
 export default function FrequentlyQuestions() {
-  const [activeId, setActiveId] = useState<number | null>(2);
+  const [activeId, setActiveId] = useState<number | null>(1);
 
   const toggle = (id: number) => {
     setActiveId((prev) => (prev === id ? null : id));
@@ -42,6 +43,7 @@ export default function FrequentlyQuestions() {
                     <strong>{question}</strong>
                     </p>
                     {activeId === id && <p className="subtext">{answer}</p>}
+                    <RiArrowDropDownLine size={35}/>
                 </div>
             </div>
           ))}
