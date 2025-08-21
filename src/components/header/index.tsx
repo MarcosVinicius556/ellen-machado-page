@@ -32,6 +32,7 @@ export default function Header() {
                     <Link href="#testimonials" onClick={() => setMenuOpen(false)}>Depoimentos</Link>
                     <Link href="#questions" onClick={() => setMenuOpen(false)}>Dúvidas Frequentes</Link>
                     <Link href="#articles" onClick={() => setMenuOpen(false)}>Artigos</Link>
+                    <Link href="#social" onClick={() => setMenuOpen(false)}>Redes Sociais</Link>
                 </nav>
 
                 <div className={`nav-actions ${menuOpen ? "active" : ""}`}>

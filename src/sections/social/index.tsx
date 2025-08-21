@@ -11,7 +11,7 @@ export default function Social() {
         
         <div className="social-container">
             <p className="social-subtext">
-                <h3>Vamos nos conectar?</h3>
+                <strong>Vamos nos conectar?</strong>
                 <br />
                 Se você quer acompanhar conteúdos sobre bem-estar emocional, autoconhecimento e desenvolvimento pessoal, dê uma olhadinha nas minhas redes sociais!
                 <br />

@@ -165,5 +165,30 @@
   body {
     padding-top: 200px;
   }
+
+  .logo-container {
+    max-width: 100px;
+    max-height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .initials {
+    display: none;
+  }
+
+  .name {
+    font-size: 12px;
+  }
+
+  .profession {
+    font-size: 8px;
+  }
+
+  .register {
+    font-size: 7px;
+  }
 }
 
