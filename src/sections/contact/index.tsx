@@ -53,8 +53,8 @@ export default function Contact() {
                         <span>Ficou com alguma dúvida ou gostaria de agendar um horário?</span>
                     </h2>
                     <p>
-                        Sinta-se a vontade para me mandar um email ou entrar em contato pelo whatsapp no link a seguir! 
-                        <a href="https://w.app/ellen-santos-machado">Enviar mensagem no Whatsapp →</a>
+                        Caso não queira utilizar os meios de comunicação mencionados acima.
+                        Sinta-se a vontade para me enviar um email.
                     </p>
                     <p>
                         Pode ter certeza que tirarei um tempo para escutar sua história e entender os pontos que você me trouxer!

@@ -3,6 +3,7 @@ import Articles from "@/sections/articles";
 import Contact from "@/sections/contact";
 import Hero from "@/sections/hero";
 import FrequentlyQuestions from "@/sections/questions";
+import Social from "@/sections/social";
 import Testmonials from "@/sections/testmonials";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Testmonials />
       <FrequentlyQuestions />
       <Articles />
+      <Social />
       <Contact />
     </>
   );

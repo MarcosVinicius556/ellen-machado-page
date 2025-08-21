@@ -43,3 +43,8 @@ body {
 #questions {
   scroll-margin-top: 280px;
 }
+
+a {
+  text-decoration: none;
+  color: var(--lightest-text);
+}

@@ -24,7 +24,7 @@ export default function About() {
 
         <div className="about-right">
           <h3 className="about-title">
-            Uma forma irreverente de apresentar os melhores imóveis do litoral Catarinense
+            Um Espaço Para Crescer e se Reconectar
           </h3>
 
           <p className="about-text">

@@ -19,7 +19,7 @@ export default function Testmonials() {
     <section className="testimonials-section" id="testimonials">
       <div className="container">
         <h2 className="testimonials-title">
-          Relatos de alguns pacientes <strong>atendidos</strong>
+          Relatos de pacientes <strong>atendidos</strong>
         </h2>
         <div className="testimonial-box">
           <div className="testimonial-avatars">

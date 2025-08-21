@@ -10,7 +10,7 @@ export default function Footer() {
 
                 <div className="footer-col">
                     <h4>Meus Contatos</h4>
-                    <a href="https://w.app/ellen-santos-machado" target='_blank'>Whatsapp</a>
+                    <a href="https://api.whatsapp.com/send?phone=5549988401516&text=Ol%C3%A1%2C%20gostaria%20de%20entender%20melhor%20como%20funciona%20suas%20sess%C3%B5es.%20Podemos%20marcar%20um%20hor%C3%A1rio%20para%20conversar%3F" target='_blank'>Whatsapp</a>
                     <a href="https://www.instagram.com/ellenmachado_psi" target='_blank'>Instagram</a>
                     <a href="https://www.facebook.com/ellenmachadopsicologa" target='_blank'>Facebook</a>
                     <a href="https://www.linkedin.com/in/ellen-santos-machado" target='_blank'>Linkedin</a>
